@@ -35,13 +35,23 @@ var iceMachineMain = function (input) {
 };
 
 var beerOrderMain = function (input) {
+  var avgCustomer = input;
+  var totalPintPerQuarter = avgCustomer * 2 * 3 * 30;
+  var noOfHalfKeg = totalPintPerQuarter / 124;
   // Complete the More Comfortable: Beer Order exercise below with beerOrderMain as the main function.
-  var myOutputValue = "hello world";
+  var myOutputValue = noOfHalfKeg;
   return myOutputValue;
 };
 
 var cellularDataMain = function (input) {
+  var gbPerMonth = input;
+  var costPerGB = 19.99 / gbPerMonth;
+  var costPerGB50 = 19.99 / gbPerMonth + 19.99 / 50;
   // Complete the More Comfortable: Cost of Cellular Data exercise below with cellularDataMain as the main function.
-  var myOutputValue = "hello world";
+  if (gbPerMonth <= 50) {
+    var myOutputValue = costPerGB;
+  } else {
+    var myOutputValue = costPerGB50;
+  }
   return myOutputValue;
 };
